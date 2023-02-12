@@ -10,7 +10,7 @@ export class UserController {
         return this.userRepository.find()
     }
 
-    async one(request: Request, response: Response, next: NextFunction) {
+    async one(request: Request, response: Response, next: NextFunction){
         const id = parseInt(request.params.id)
         
 
