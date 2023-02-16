@@ -23,7 +23,12 @@ export const Routes = [{
     action: "remove"
 }, {
     method: "post",
-    route: "/CreateAccount",
+    route: "/account/create",
     controller: AccountController,
     action: "save"
+}, {
+    method: "get",
+    route: "/account",
+    controller: AccountController,
+    action: "find"
 }]
