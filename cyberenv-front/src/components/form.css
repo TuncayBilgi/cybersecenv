@@ -1,0 +1,50 @@
+.form-container {
+    height: fit-content;
+    padding: 1.5em;
+    background-color: #f2eeee;
+    border-radius: 1em;
+    display : flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: end;
+    transition: all;
+    
+  }
+
+  .form-title {
+    align-self: center;
+    margin-bottom: 0em;
+    margin-top: 0em;
+  }
+
+  .form-item{
+    margin-left: 1em;
+  }
+
+  .form-label{
+    text-justify:inter-word;
+  }
+
+  .submit-button{
+    align-self: center;
+    margin-top: 0.5em;
+  }
+
+  .button-message_box {
+    height: fit-content;
+    padding: 1.5em;
+    background-color: #f2eeee;
+    border-radius: 1em;
+    display : flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .button-message {
+    color: red;
+  }
+
+  .created{
+    color: chartreuse;
+  }

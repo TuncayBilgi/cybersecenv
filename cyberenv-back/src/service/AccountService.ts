@@ -45,7 +45,7 @@ export class AccountService {
             
         }
         else if (!validatePassword(account.password)) {
-            throw new Error ('password invalid')
+            throw new Error ('invalid password')
         }
         else {
             const {login, password} = account;

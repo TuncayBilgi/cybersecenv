@@ -15,14 +15,14 @@ export class AccountController {
     }
 }
 
-    async save(request : Request): Promise<AccountDTO|Error>  {
+    async save(request : Request, response : Response): Promise<AccountDTO|Error>  {
         {
         
         const account : AccountDTO = new AccountDTO(request.body.login,request.body.password)
         try {
-            const response = await this.AccountService.createAccount(account);
-            console.log(response)
-            return response
+            const res = await this.AccountService.createAccount(account);
+            console.log("WOOOOOOOOOOOOOOOOOOOOOW",response)
+            return res
         }
         catch (error : any) {
             let e =  new Error (error)

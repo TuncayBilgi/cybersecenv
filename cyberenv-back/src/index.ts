@@ -4,6 +4,7 @@ import { Request, Response } from "express"
 import { AppDataSource } from "./data-source"
 import { Routes } from "./routes"
 import { User } from "./entity/User"
+import cors =require('cors')
 
 
 AppDataSource.initialize().then(async () => {
@@ -11,6 +12,7 @@ AppDataSource.initialize().then(async () => {
     // create express app
     const app = express()
     app.use(bodyParser.json())
+    app.use(cors())
 
     // register express routes from defined application routes
     Routes.forEach(route => {
